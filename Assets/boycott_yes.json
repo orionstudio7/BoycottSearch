@@ -1,0 +1,30 @@
+[
+    {
+        "company_name": "Amazon",
+        "reasons": "People are boycotting Amazon due to its anti-union labor practices, it's rollback of DEI programs, and its unsafe working conditions.",
+        "sources": [
+          "https://www.bloomberg.com/news/articles/2025-01-10/amazon-is-halting-some-of-its-diversity-and-inclusion-programs?srnd=homepage-americas&embedded-checkout=true ",
+          "https://www.theregister.com/2025/03/18/amazon_algorithmic_worker_management/",
+          "https://minnesotareformer.com/2024/06/28/amazon-warehouse-cited-for-unsafe-working-conditions-and-other-labor-news/",
+          "https://www.cnn.com/2024/07/17/tech/amazon-warehouses-prime-day-injuries-senate/index.html",
+          "https://journals.sagepub.com/doi/epub/10.1177/23780231251318389"
+        ]
+    },
+
+    {
+        "company_name": "Target", 
+        "reasons": "People are boycotting Target because of its memo stating they would end its 3 year DEI goals, including a committment to spend 2 billion on black-owned businesses by 2025.", 
+        "sources": [
+            "https://www.distractify.com/p/why-are-people-boycotting-target"
+        ]
+    },
+
+    {
+        "company_name": "Nestle",
+        "reasons": "People are boycotting Nestle because of its use of child labor in West Africa and its policy of bottling gallons of free water from Michigan while Flint still suffers a water crisis.",
+        "sources": [
+            "https://www.washingtonpost.com/graphics/2019/business/hershey-nestle-mars-chocolate-child-labor-west-africa/",
+            "https://www.propublica.org/article/michigan-bottled-water-whitmer-flint"
+        ]
+    }
+]

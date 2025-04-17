@@ -1,0 +1,52 @@
+/* two lined focus indicator provides accessibility no matter what browser settings users have z*/
+*:focus {
+	outline: 2px #ffffff solid;
+	outline-offset: 0;
+	box-shadow: 0 0 0 4px #000000;
+}   
+
+
+div.search{
+    background-color: #B67A8D;
+    word-wrap: break-word;
+    padding: 70px;
+
+}
+
+html{
+    background-color: #d5e9ff;
+}               
+
+a{
+    color: white;
+}
+
+fieldset{
+    margin: 10px;
+    box-sizing: border-box
+    /* width: */
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+input.brand{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+hr{
+    box-sizing: border-box;
+    background-color: #000000;
+    border: none;
+    height: 5px;
+}

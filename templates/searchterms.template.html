@@ -1,0 +1,52 @@
+<!--Brand Search Input Box -->
+<label>Brand: 
+<input class="brand" ng-model="$ctrl.brand" ng-keyup = "$ctrl.reset()">
+</label>
+<br>
+<br>
+
+<!-- Selects which company's trademark database to search-->
+
+<fieldset id="company-group">
+<legend>Boycott to search:</legend>
+    <label>
+    <input type="radio" name="company-group" value="Amazon"  ng-model="$ctrl.company" ng-change="$ctrl.reset()">
+    Amazon</label><br>
+    <label>
+    <input type="radio"name="company-group" value="Target" ng-model="$ctrl.company" ng-change="$ctrl.reset()">
+    Target</label><br>
+    <label>
+    <input type="radio"name="company-group" value="Nestle" ng-model="$ctrl.company" ng-change="$ctrl.reset()">
+    Nestle</label><br>
+</fieldset>
+</label>
+<!-- Fires the search command -->
+<button ng-click="$ctrl.search($ctrl.company, $ctrl.brand)">Search</button>
+
+
+<hr/>
+
+<!-- If the brand is in the selected company boycott, show-->
+<div ng-if="$ctrl.found && $ctrl.items.length > 0">
+    <p>Yes, {{$ctrl.brand}} is owned by {{$ctrl.company}}.</p>
+
+    <p>{{$ctrl.reasons}}</p>
+
+    <p>Sources to learn more:</p>
+    <ul>
+        <li ng-repeat="source in $ctrl.sources">
+            <a href="{{source}}">{{source}}</a>
+        </li>
+    </ul>
+</div>
+
+<!-- If the brand is not in the selected company boycott, show-->
+<div ng-if="!$ctrl.found && $ctrl.items.length > 0">
+    <p>No, {{$ctrl.brand}} does not seem to be owned by {{$ctrl.company}}.</p>
+
+    <p>Please note that this is a work in progress, and information may be outdated. </p>
+    
+    <p>Double check the spelling of the brand to be sure. </p>
+    
+</div>
+
