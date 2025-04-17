@@ -26,7 +26,7 @@ var database_module = angular.module("database_search")
 		//requested brand 
 		this.search = function(company, brand)
 		{
-			url = "/Assets/" + company + ".json"
+			url = "./Assets/" + company + ".json"
 			console.log(this.company)
 
 			//makes sure to not perform a search 
