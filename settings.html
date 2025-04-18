@@ -10,7 +10,7 @@
         <div class="container">
           <ul class="nav-list">
             <li><a href="./">Home</a></li>
-            <li><a href="./settings.html/">Settings</a></li>
+            <li><a href="./settings.html">Settings</a></li>
           </ul>
         </div>
       </nav>
@@ -24,10 +24,10 @@
             <label>Open Dyslexic Font</label> <br>
 
             <label>
-            <input type="radio" name = "font" value = "dysOff" onclick="setFont('Mazius')">
+            <input id="off" type="radio" name = "font" value = "dysOff" onclick="setFont('Mazius')">
             Off <span></span></label>
             <label>
-            <input type="radio" name = "font" value = "dysOn" onclick="setFont('opendyslexic')">
+            <input id="on" type="radio" name = "font" value = "dysOn" onclick="setFont('opendyslexic')">
             On<span></span></label>
         </form>
     </section>

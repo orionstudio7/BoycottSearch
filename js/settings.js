@@ -18,8 +18,16 @@ function loadFont()
         elements[i].style.fontFamily = localStorage.font;
     }
 
-    
+    if(localStorage.font=='Mazius')
+    {
+        const radio = document.getElementById("off");
+        radio.checked = true;
+    }
         
+    else{
+        const radio = document.getElementById("on");
+        radio.checked = true;
+    }
 }
 
 
