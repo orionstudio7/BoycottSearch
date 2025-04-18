@@ -1,4 +1,4 @@
-var database_module = angular.module("database_search")
+var database_module = angular.module("database_search", [])
 .controller(function DatabaseSearchController($http)
 {
 	this.brand = "";
@@ -26,8 +26,8 @@ var database_module = angular.module("database_search")
 		//requested brand 
 		this.search = function(company, brand)
 		{
-			url = "./Assets/" + company + ".json";
-			console.log(this.company);
+			url = "./Assets/" + company + ".json"
+			console.log(this.company)
 
 			//makes sure to not perform a search 
 			//if the parameters won't be successful
@@ -41,7 +41,7 @@ var database_module = angular.module("database_search")
 					//makes sure the search successfully picked up the trademarks
 					if(self.items)
 						{
-							self.found = false;
+							self.found = false
 
 							//searches database for the brand
 							for(i = 0; i < self.items.length; i++)
@@ -102,3 +102,8 @@ var database_module = angular.module("database_search")
 
 	
 }]})
+
+
+
+
+	  

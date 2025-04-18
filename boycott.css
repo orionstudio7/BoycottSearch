@@ -11,12 +11,49 @@
     src: url('./Assets/Fonts/MaziusDisplay-Regular.woff')  format('truetype');
   }
 
+  @font-face {
+    font-family: Mazius;
+    src: url('./Assets/Fonts/MaziusDisplay-Bold.woff')  format('truetype');
+    font-weight: bold;
+  }
+
+@font-face{
+    font-family: opendyslexic;
+    src: url('./Assets/Fonts/OpenDyslexic-Regular.otf')
+}
+@font-face{
+    font-family: opendyslexic;
+    src: url('./Assets/fonts/OpenDyslexic-Bold.otf');
+    font-weight: bold;
+}
 
 div.search{
     background-color: #B67A8D;
     word-wrap: break-word;
     padding: 70px;
 
+
+}
+
+.fontSection{
+    background-color: #B67A8D;
+    padding: 50px;
+
+}
+
+nav{
+    background-color: #B67A8D;
+}
+
+nav ul {
+    list-style: none;
+    padding:0;
+}
+
+ul.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 html{

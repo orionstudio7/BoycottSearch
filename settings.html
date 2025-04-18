@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./boycott.css">
+    <script type="text/javascript" src="./js/settings.js" defer></script>
+
+    <nav class="navbar">
+        <div class="container">
+          <ul class="nav-list">
+            <li><a href="./">Home</a></li>
+            <li><a href="/settings.html/">Settings</a></li>
+          </ul>
+        </div>
+      </nav>
+</head>
+    
+    <h1>Settings</h1>
+    
+    <section class = "fontSection">
+<!--            radio button form-->
+        <form>
+            <label>Open Dyslexic Font</label> <br>
+
+            <label>
+            <input type="radio" name = "font" value = "dysOff" onclick="setFont('Mazius')">
+            Off<span></span></label>
+            <label>
+            <input type="radio" name = "font" value = "dysOn" onclick="setFont('opendyslexic')">
+            On<span></span></label>
+        </form>
+    </section>
+    
+    <footer>Open Source. MIT License.</footer> 
+</body>
+
+
+</html> 
