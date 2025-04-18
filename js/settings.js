@@ -16,6 +16,7 @@ function loadFont()
     
     
     if(localStorage.font){
+        console.log(localStorage.font)
         for (let i = 0; i < elements.length; i++) 
         {
             elements[i].style.fontFamily = localStorage.font;
