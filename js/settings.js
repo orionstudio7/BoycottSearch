@@ -17,6 +17,8 @@ function loadFont()
     {
         elements[i].style.fontFamily = localStorage.font;
     }
+
+    
         
 }
 
