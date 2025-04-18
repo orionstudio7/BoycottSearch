@@ -3,7 +3,13 @@
 	outline: 2px #ffffff solid;
 	outline-offset: 0;
 	box-shadow: 0 0 0 4px #000000;
-}   
+} 
+
+
+@font-face {
+    font-family: Mazius;
+    src: url('./Assets/Fonts/MaziusDisplay-Regular.woff')  format('truetype');
+  }
 
 
 div.search{
@@ -15,6 +21,7 @@ div.search{
 
 html{
     background-color: #d5e9ff;
+    font-family: Mazius;
 }               
 
 a{
@@ -23,14 +30,14 @@ a{
 
 fieldset{
     margin: 10px;
-    box-sizing: border-box
-    /* width: */
+    box-sizing: border-box;
 }
 
 button{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
+    font-family: Mazius;
 
 }
 input.brand{
@@ -50,3 +57,5 @@ hr{
     border: none;
     height: 5px;
 }
+
+
