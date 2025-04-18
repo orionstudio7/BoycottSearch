@@ -12,21 +12,26 @@ function setFont(fontname) {
 
 function loadFont()
 {
-    const elements = document.getElementsByTagName("*"); 
-    for (let i = 0; i < elements.length; i++) 
-    {
-        elements[i].style.fontFamily = localStorage.font;
-    }
+    const elements = document.getElementsByTagName("*");
+    
+    
+    if(localStorage.font){
+        for (let i = 0; i < elements.length; i++) 
+        {
+            elements[i].style.fontFamily = localStorage.font;
+        }
 
-    if(localStorage.font=='Mazius')
-    {
-        const radio = document.getElementById("off");
-        radio.checked = true;
-    }
-        
-    else{
-        const radio = document.getElementById("on");
-        radio.checked = true;
+        if(localStorage.font=='opendyslexic')
+        {
+            const radio = document.getElementById("on");
+            radio.checked = true;
+        }
+            
+        else{
+            const radio = document.getElementById("off");
+            radio.checked = true;
+        }
+
     }
 }
 
