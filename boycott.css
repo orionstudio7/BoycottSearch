@@ -31,8 +31,7 @@ div.search{
     background-color: #B67A8D;
     word-wrap: break-word;
     padding: 70px;
-
-
+    font-size: 3vw;
 }
 
 .fontSection{
@@ -43,6 +42,7 @@ div.search{
 
 nav{
     background-color: #B67A8D;
+    font-size: 3.5vw;
 }
 
 nav ul {
@@ -85,6 +85,7 @@ input.brand{
 
 h1{
     text-align: center;
+    font-size: 5vw;
 }
 
 
@@ -96,3 +97,46 @@ hr{
 }
 
 
+
+
+/*Reactive Design*/
+@media (max-width: 600px) {
+
+    nav{
+        font-size: 20px;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    div.search{
+        padding: 50px;
+        font-size: 15px;
+    }
+
+    h1
+    {
+        font-size:25px;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    div.search{
+        padding: 25px;
+        font-size: 15px;
+
+    }
+
+        
+}
