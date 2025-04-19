@@ -82,6 +82,7 @@ input.brand{
     width: 100%;
     box-sizing: border-box;
     margin-top: 10px;
+    
 }
 
 h1{
@@ -97,7 +98,15 @@ hr{
     height: 5px;
 }
 
-
+.skip-link {
+    opacity:0
+  }
+  
+  .skip-link:focus {
+    background-color: #B67A8D;
+    transform: translateY(0%);
+    opacity: 1;
+  }
 
 
 /*Reactive Design*/
